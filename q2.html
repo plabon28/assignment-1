@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Layout with Audio and Video</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        aside {
+            width: 20%;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        main {
+            width: 60%;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        aside, main {
+            box-sizing: border-box;
+        }
+
+        .remarks {
+            width: 20%;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h1>Welcome to My Web Page</h1>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the content of section 1.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the content of section 2.</p>
+            <audio controls>
+                <source src="audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the content of section 3.</p>
+            <video width="320" height="240" controls>
+                <source src="video-file.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <div class="remarks">
+        <h2>Remarks</h2>
+        <p>These are some remarks about the content on the page.</p>
+    </div>
+</body>
+</html>
